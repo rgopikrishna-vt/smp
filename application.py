@@ -7,11 +7,11 @@ def hello_world():
     return 'Sup.'
 
 
-@app.route("/hi/")
+@application.route("/hi/")
 def who():
     return "Who are you?"
 
 
-@app.route("/hi/<username>")
+@application.route("/hi/<username>")
 def greet(username):
     return f"Hi there, {username}!"
